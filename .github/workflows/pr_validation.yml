@@ -1,0 +1,33 @@
+name: PR Validation
+
+on:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: Install dependencies
+      working-directory: azure_function_sample
+      shell: bash
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: Lint with flake8
+      working-directory: azure_function_sample
+      shell: bash
+      run: |
+        flake8 .
+    - name: Test with pytest
+      working-directory: azure_function_sample
+      shell: bash
+      run: |
+        pytest
