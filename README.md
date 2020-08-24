@@ -11,7 +11,7 @@ urlFragment: azure-machine-learning-pipeline-observability-sample
 description: "Contains Event Driven Approach sample for Azure Machine Learning pipeline run observability metrics"
 ---
 
-![Master test and push](https://github.com/cpeeyush/azure-machine-learning-pipeline-observability-sample/workflows/Master%20lint%20and%20test/badge.svg)
+![Master test and push](https://github.com/Azure-Samples/azure-machine-learning-pipeline-observability-sample/workflows/Master%20lint%20and%20test/badge.svg)
 
 # Azure Machine Learning(AML) Pipeline Run Observability
 
