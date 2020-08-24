@@ -6,9 +6,6 @@ products:
 - azure-machine-learning
 - azure-event-grid
 - azure-functions
-name: "Azure Machine Learning Pipeline Run Observability Sample"
-urlFragment: azure-machine-learning-pipeline-observability-sample
-description: "Contains Event Driven Approach sample for Azure Machine Learning pipeline run observability metrics"
 ---
 
 ![Master lint and test](https://github.com/Azure-Samples/azure-machine-learning-pipeline-observability-sample/workflows/Master%20lint%20and%20test/badge.svg)
